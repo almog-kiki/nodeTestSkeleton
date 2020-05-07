@@ -1,0 +1,38 @@
+{
+  "version": "0.0.1",
+  "name": "async-test",
+  "author": "Almog Kal",
+  "description": "async test using jest ,axios and mongo",
+  "keywords": [
+    "async tests",
+    "mongo",
+    "axios",
+    "jest supertest"
+  ],
+  "scripts": {
+    "start": "nodemon start.js",
+    "test": "jest --forceExit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/register": "^7.0.0",
+    "babel-jest": "^26.0.1",
+    "jest": "^26.0.1",
+    "nodemon": "^1.18.6",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.12"
+  }
+}
